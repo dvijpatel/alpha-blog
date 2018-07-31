@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AlphaBlog</title>
+  <%= stylesheet_link_tag    'pages', media: 'all', 'data-turbolinks-track' => true %>
+  
+  <%= javascript_include_tag 'pages', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1 style="text-align: center;"> This is the home page <h1>
+<%= link_to 'About', about_path %> <br>
+<%= image_tag "grid_AI.jpg", :class => "banner_style" %>
+<div class="row">
+  <div class="column" style="background-color: #42bff4;">
+    <h2>Paragraph 1</h2>
+    <p>This is my first paragraph</p>
+  </div>
+  <div class="column" style="background-color: #a8bbc4;">
+    <h2>Paragraph 2</h2>
+    <p>This is my 2nd paragraph</p>
+  </div>
+</div>
+</body>
+</html>
